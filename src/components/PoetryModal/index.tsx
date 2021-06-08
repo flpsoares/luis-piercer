@@ -2,21 +2,32 @@ import { Box, CloseButton, Container, Content, Header, Title } from './style'
 
 import { MdClose } from 'react-icons/md'
 
-const PoetryModal: React.FC = () => {
+import data from '../../../poetrys.json'
+
+interface PoetryProps {
+  id: number
+  title: string
+  p: string
+}
+
+const PoetryModal: React.FC<PoetryProps> = ({ title }) => {
+  title = 'Maluca'
+
+  const poetry = data.find((poetry) => poetry.title === title)
+
   return (
     <Container>
       <Box>
         <Header>
-          <Title>Título</Title>
+          <Title>{poetry.title}</Title>
           <CloseButton>
             <MdClose />
           </CloseButton>
         </Header>
         <Content>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsum
-          perspiciatis doloremque ea aliquam amet non eum libero, facilis nisi
-          necessitatibus sunt fugit autem optio dignissimos, labore aspernatur,
-          deleniti aperiam!
+          {poetry.p.map((paragraph) => {
+            return <p key={poetry.id}>{paragraph}</p>
+          })}
         </Content>
       </Box>
     </Container>

@@ -16,11 +16,13 @@ export const Container = styled.div`
 `
 
 export const Box = styled.div`
-  background: var(--dark);
-  width: 500px;
+  /* background: var(--dark); */
+  /* width: 500px; */
 
   position: relative;
   border-radius: 5px;
+
+  z-index: 5;
 `
 
 export const Header = styled.div`
@@ -31,8 +33,6 @@ export const Header = styled.div`
   color: var(--primary);
 
   padding: 15px;
-
-  border-bottom: 1px solid var(--primary);
 
   text-align: center;
 `
