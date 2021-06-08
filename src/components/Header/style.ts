@@ -23,6 +23,6 @@ export const NavButton = styled.a`
   transition: border-bottom 0.4s;
 
   &:hover {
-    border-bottom: 5px solid #e78d3c;
+    border-bottom: 5px solid var(--primary);
   }
 `
