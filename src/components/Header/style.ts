@@ -5,6 +5,11 @@ export const Container = styled.div`
   height: 130px;
   padding: 0 200px;
   background-color: black;
+  z-index: 10;
+
+  position: fixed;
+  top: 0;
+  left: 0;
 
   display: flex;
   justify-content: space-between;
@@ -18,11 +23,11 @@ export const NavButton = styled.a`
   font-size: 15px;
   margin: 0 18px;
   text-decoration: none;
-  padding-bottom: 52px;
-  border-bottom: 5px solid black;
+  padding-bottom: 51px;
+  border-bottom: 4px solid black;
   transition: border-bottom 0.4s;
 
   &:hover {
-    border-bottom: 5px solid #e78d3c;
+    border-bottom: 4px solid #e78d3c;
   }
 `
