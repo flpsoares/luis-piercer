@@ -1,4 +1,12 @@
-import { Container, Title, Profile, Poetry, PoetryButton, BoxProfile } from './style'
+import {
+  Container,
+  Title,
+  Profile,
+  Poetry,
+  PoetryButton,
+  BoxProfile,
+  Line
+} from './style'
 
 import Image from 'next/image'
 
@@ -6,6 +14,7 @@ const AboutMe: React.FC = () => {
   return (
     <Container>
       <Title>Quem é Luis Piercer33?</Title>
+      <Line />
       <BoxProfile>
         <Profile>
           <div>
@@ -35,6 +44,9 @@ const AboutMe: React.FC = () => {
           <PoetryButton>Poesia 1</PoetryButton>
           <PoetryButton>Poesia 2</PoetryButton>
           <PoetryButton>Poesia 3</PoetryButton>
+          <PoetryButton>Poesia 4</PoetryButton>
+          <PoetryButton>Poesia 5</PoetryButton>
+          <PoetryButton>Poesia 6</PoetryButton>
         </Poetry>
       </BoxProfile>
     </Container>
