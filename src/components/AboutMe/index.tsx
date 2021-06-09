@@ -5,7 +5,8 @@ import {
   Poetry,
   PoetryButton,
   BoxProfile,
-  Line
+  Line,
+  ContactButton
 } from './style'
 
 import Image from 'next/image'
@@ -18,7 +19,12 @@ const AboutMe: React.FC = () => {
       <BoxProfile>
         <Profile>
           <div>
-            <Image src="/assets/p5.jpg" width={100} height={100} />
+            <Image
+              alt="Luis Guilherme"
+              src="/assets/luis.jpg"
+              width={80}
+              height={80}
+            />
             <h2>LUIS GUILHERME STEIN</h2>
           </div>
           <h3>São Paulo - SP</h3>
@@ -49,6 +55,10 @@ const AboutMe: React.FC = () => {
           <PoetryButton>Poesia 6</PoetryButton>
         </Poetry>
       </BoxProfile>
+
+      <ContactButton>
+        Entre em contato agora para agendar o seu piercing comigo!
+      </ContactButton>
     </Container>
   )
 }

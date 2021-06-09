@@ -41,7 +41,7 @@ export const Profile = styled.div`
   div {
     display: flex;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 60%;
 
     h2 {
       margin-left: 20px;
@@ -56,8 +56,8 @@ export const Profile = styled.div`
   }
 
   p {
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 9px;
+    font-size: 19px;
     font-weight: 200;
   }
 `
@@ -90,6 +90,21 @@ export const PoetryButton = styled.button`
 
   &:hover {
     background-color: var(--primary);
+    color: white;
+  }
+`
+
+export const ContactButton = styled.button`
+  background-color: rgba(231, 141, 60, 0.3);
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 40px;
+  border-radius: 27px;
+  transition: border-radius 0.4s, background-color 0.4s, color 0.4s;
+
+  &:hover {
+    background-color: rgba(231, 141, 60, 1);
     color: white;
   }
 `
