@@ -8,8 +8,7 @@ export const Container = styled.div`
 
 export const SquareGalery = styled.div`
   width: 100%;
-  height: 200px;
-  background-color: gray;
+  height: 400px;
 `
 
 export const WhyMe = styled.div`
@@ -23,5 +22,14 @@ export const WhyMe = styled.div`
   p {
     font-weight: 100;
     font-size: 17px;
+  }
+`
+
+export const CarouselImage = styled.div`
+  img {
+    width: 170px;
+    height: 100%;
+
+    margin: 0 40px;
   }
 `

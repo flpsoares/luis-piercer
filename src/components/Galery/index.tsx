@@ -1,9 +1,30 @@
-import { Container, SquareGalery, WhyMe } from './style'
+import { Container, SquareGalery, WhyMe, CarouselImage } from './style'
+
+import Carousel from 'react-elastic-carousel'
 
 const Galery: React.FC = () => {
   return (
     <Container>
-      <SquareGalery />
+      <SquareGalery>
+        <Carousel isRTL={false}>
+          <CarouselImage>
+            <img src="/assets/p1.jpg" />
+            <img src="/assets/p2.jpg" />
+            <img src="/assets/p3.jpg" />
+          </CarouselImage>
+          <CarouselImage>
+            <img src="/assets/p4.jpg" />
+            <img src="/assets/p5.jpg" />
+            <img src="/assets/p6.jpg" />
+          </CarouselImage>
+          <CarouselImage>
+            <img src="/assets/p7.jpg" />
+            <img src="/assets/p8.jpg" />
+            <img src="/assets/p9.jpg" />
+            <img src="/assets/p10.jpg" />
+          </CarouselImage>
+        </Carousel>
+      </SquareGalery>
 
       <WhyMe>
         <h2>Porque Escolher o Luis Piercer Tatto?</h2>
