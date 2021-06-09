@@ -1,4 +1,4 @@
-import { Box, CloseButton, Container, Content, Header, Title } from './style'
+import { Box, CloseButton, Container, Content, Title } from './style'
 
 import { MdClose } from 'react-icons/md'
 
@@ -21,17 +21,15 @@ const PoetryModal: React.FC<PoetryProps> = ({ title }) => {
   return (
     <Container>
       <Box initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-        <Header>
-          <Title>{poetry.title}</Title>
-          <CloseButton onClick={closeModal}>
-            <MdClose />
-          </CloseButton>
-        </Header>
+        <Title>{poetry.title}</Title>
         <Content>
           {poetry.p.map((paragraph) => {
             return <p key={poetry.id}>{paragraph}</p>
           })}
         </Content>
+        <CloseButton onClick={closeModal}>
+          <MdClose />
+        </CloseButton>
       </Box>
     </Container>
   )

@@ -19,34 +19,26 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  z-index: 2;
+  z-index: 3;
 `
 
 export const Box = styled(motion.div)`
-  position: relative;
-  border-radius: 5px;
+  position: fixed;
 
-  z-index: 5;
+  width: 500px;
+  height: 60vh;
+
+  top: 50px;
 `
-
-export const Header = styled.div`
-  position: relative;
-
-  width: 100%;
-
-  color: var(--primary);
-
-  padding: 15px;
-
+export const Title = styled.h1`
   text-align: center;
 `
-export const Title = styled.h1``
 
 export const CloseButton = styled.button`
   position: absolute;
 
-  right: 10px;
-  top: 20px;
+  right: 0;
+  top: 10px;
 
   font-size: 25px;
   color: white;
@@ -57,7 +49,10 @@ export const Content = styled.div`
   line-height: 30px;
   font-size: 20px;
 
+  overflow-y: auto;
+
   padding: 15px;
+  height: 600px;
 
   color: white;
 `
