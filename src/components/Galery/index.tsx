@@ -21,7 +21,6 @@ const Galery: React.FC = () => {
             <img src="/assets/p7.jpg" />
             <img src="/assets/p8.jpg" />
             <img src="/assets/p9.jpg" />
-            <img src="/assets/p10.jpg" />
           </CarouselImage>
         </Carousel>
       </SquareGalery>

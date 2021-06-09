@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 export const SquareGalery = styled.div`
   width: 100%;
-  height: 400px;
+  height: 350px;
 `
 
 export const WhyMe = styled.div`
@@ -27,8 +27,10 @@ export const WhyMe = styled.div`
 
 export const CarouselImage = styled.div`
   img {
-    width: 170px;
-    height: 100%;
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
 
     margin: 0 40px;
   }
