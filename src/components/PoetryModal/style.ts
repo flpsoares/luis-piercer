@@ -23,12 +23,10 @@ export const Container = styled.div`
 `
 
 export const Box = styled(motion.div)`
-  position: fixed;
+  position: relative;
 
   width: 500px;
-  height: 60vh;
-
-  top: 50px;
+  height: 70vh;
 `
 export const Title = styled.h1`
   text-align: center;
@@ -52,7 +50,7 @@ export const Content = styled.div`
   overflow-y: auto;
 
   padding: 15px;
-  height: 600px;
+  height: 450px;
 
   color: white;
 `
