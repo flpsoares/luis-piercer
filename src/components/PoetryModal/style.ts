@@ -1,10 +1,17 @@
 import styled from 'styled-components'
 
+import { motion } from 'framer-motion'
+
 export const Container = styled.div`
   position: fixed;
 
   width: 100vw;
   height: 100vh;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 
   background: rgba(0, 0, 0, 0.7);
 
@@ -15,10 +22,7 @@ export const Container = styled.div`
   z-index: 2;
 `
 
-export const Box = styled.div`
-  /* background: var(--dark); */
-  /* width: 500px; */
-
+export const Box = styled(motion.div)`
   position: relative;
   border-radius: 5px;
 
