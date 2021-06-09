@@ -3,24 +3,27 @@ import { Box, CloseButton, Container, Content, Header, Title } from './style'
 import { MdClose } from 'react-icons/md'
 
 import data from '../../../poetrys.json'
+import ModalEvents from '../../events/ModalEvents'
 
 interface PoetryProps {
-  id: number
+  id?: number
   title: string
-  p: string
+  p?: string
 }
 
 const PoetryModal: React.FC<PoetryProps> = ({ title }) => {
-  title = 'Maluca'
-
   const poetry = data.find((poetry) => poetry.title === title)
+
+  const closeModal = () => {
+    ModalEvents.emit('title', null)
+  }
 
   return (
     <Container>
-      <Box>
+      <Box initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <Header>
           <Title>{poetry.title}</Title>
-          <CloseButton>
+          <CloseButton onClick={closeModal}>
             <MdClose />
           </CloseButton>
         </Header>

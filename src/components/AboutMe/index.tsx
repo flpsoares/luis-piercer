@@ -9,10 +9,20 @@ import {
 } from './style'
 
 import Image from 'next/image'
+import PoetryModal from '../PoetryModal'
+import { useModal } from '../../hooks/useModal'
+import ModalEvents from '../../events/ModalEvents'
 
 const AboutMe: React.FC = () => {
+  const { title } = useModal()
+
+  const handlePoetry = (poetryTitle: string) => {
+    ModalEvents.emit('title', poetryTitle)
+  }
+
   return (
     <Container>
+      {title && <PoetryModal title={title} />}
       <Title>Quem é Luis Piercer33?</Title>
       <Line />
       <BoxProfile>
@@ -41,12 +51,20 @@ const AboutMe: React.FC = () => {
         </Profile>
         <Poetry>
           <h2>Minhas Poesias</h2>
-          <PoetryButton>Poesia 1</PoetryButton>
-          <PoetryButton>Poesia 2</PoetryButton>
-          <PoetryButton>Poesia 3</PoetryButton>
-          <PoetryButton>Poesia 4</PoetryButton>
-          <PoetryButton>Poesia 5</PoetryButton>
-          <PoetryButton>Poesia 6</PoetryButton>
+          <PoetryButton onClick={() => handlePoetry('Olhar indefinido')}>
+            Olhar indefinido
+          </PoetryButton>
+          <PoetryButton onClick={() => handlePoetry('Florescer do desastre')}>
+            Florescer do desastre
+          </PoetryButton>
+          <PoetryButton onClick={() => handlePoetry('Prisão de ossos')}>
+            Prisão de ossos
+          </PoetryButton>
+          <PoetryButton onClick={() => handlePoetry('Chuva salgada')}>
+            Chuva salgada
+          </PoetryButton>
+          <PoetryButton onClick={() => handlePoetry('2°s')}>2°s</PoetryButton>
+          <PoetryButton onClick={() => handlePoetry('Dias')}>Dias</PoetryButton>
         </Poetry>
       </BoxProfile>
     </Container>
