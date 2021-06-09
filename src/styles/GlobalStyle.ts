@@ -29,6 +29,24 @@ export default createGlobalStyle`
     --dark-header: #101010;
   }
 
+  /* width */
+  ::-webkit-scrollbar {
+      width: 10px;
+    }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+    &:hover {
+      background: rgba(231, 141, 60, 0.7);
+    }
+  }
+
   .rec-dot {
     background-color: transparent !important;
     opacity: 50% !important;
