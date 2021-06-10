@@ -8,7 +8,8 @@ export const Container = styled.div`
 
 export const SquareGalery = styled.div`
   width: 100%;
-  height: 400px;
+  height: 350px;
+  margin-bottom: 60px;
 `
 
 export const WhyMeContainer = styled.div`
