@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  padding: 30px;
+  padding: 90px 30px;
   background-color: rgba(17, 16, 16, 1);
 
-  scroll-margin-top: 100px;
+  scroll-margin-top: 130px;
 `
 
 export const SquareGalery = styled.div`
@@ -34,6 +34,22 @@ export const WhyMeContainer = styled.div`
 
 export const WhyMe = styled.div`
   width: 50%;
+
+  h2 {
+    text-align: center;
+    font-weight: 100;
+  }
+
+  p {
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  p:nth-child(3) {
+    font-weight: 800;
+    color: var(--primary);
+  }
 `
 
 export const BigNumbers = styled.div`
@@ -61,6 +77,7 @@ export const BoxBigNumbers = styled.div`
   div {
     display: flex;
     flex-direction: column;
+    margin: 20px 0px;
 
     h2 {
       margin: 0;
