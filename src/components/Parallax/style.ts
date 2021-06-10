@@ -27,4 +27,12 @@ export const Overlay = styled.button`
     font-size: 40px;
     text-align: center;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 200px;
+
+    p {
+      font-size: 20px;
+    }
+  }
 `

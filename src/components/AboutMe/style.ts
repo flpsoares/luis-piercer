@@ -10,12 +10,20 @@ export const Container = styled.div`
   justify-content: center;
 
   scroll-margin-top: 100px;
+
+  @media screen and (max-width: 768px) {
+    padding: 70px 10px;
+  }
 `
 
 export const Title = styled.h1`
   margin-bottom: 10px;
   font-weight: 100;
   font-size: 63px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 33px;
+  }
 `
 
 export const Line = styled.div`
@@ -24,12 +32,20 @@ export const Line = styled.div`
   height: 3px;
   margin-bottom: 50px;
   background-color: var(--primary);
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+  }
 `
 
 export const BoxProfile = styled.div`
   width: 100%;
   /* border: 1px solid black; */
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const Profile = styled.div`
@@ -62,6 +78,24 @@ export const Profile = styled.div`
     font-size: 19px;
     font-weight: 200;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+
+    margin-bottom: 40px;
+
+    div {
+      display: flex;
+      align-items: center;
+      border-radius: 60%;
+
+      h2 {
+        margin-left: 20px;
+        font-size: 29px;
+        font-weight: 100;
+      }
+    }
+  }
 `
 
 export const Poetry = styled.div`
@@ -75,6 +109,10 @@ export const Poetry = styled.div`
     margin-bottom: 10px;
     font-size: 38px;
     font-weight: 200;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
 `
 
