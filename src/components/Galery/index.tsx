@@ -1,4 +1,16 @@
-import { Container, SquareGalery, WhyMe, CarouselImage } from './style'
+import {
+  Container,
+  SquareGalery,
+  WhyMeContainer,
+  WhyMe,
+  BigNumbers,
+  BoxBigNumbers,
+  CarouselImage
+} from './style'
+
+import { MdFace, MdHome, MdAvTimer } from 'react-icons/md'
+
+import { GiLoveInjection } from 'react-icons/gi'
 
 import Carousel from 'react-elastic-carousel'
 
@@ -22,19 +34,75 @@ const Galery: React.FC = () => {
             <img src="/assets/p8.jpg" />
             <img src="/assets/p9.jpg" />
           </CarouselImage>
+          <CarouselImage>
+            <img src="/assets/p10.jpg" />
+            <img src="/assets/p11.jpg" />
+            <img src="/assets/p12.jpg" />
+          </CarouselImage>
+          <CarouselImage>
+            <img src="/assets/p13.jpg" />
+            <img src="/assets/p14.jpg" />
+            <img src="/assets/p15.jpg" />
+          </CarouselImage>
+          <CarouselImage>
+            <img src="/assets/p16.jpg" />
+            <img src="/assets/p17.jpg" />
+            <img src="/assets/p18.jpg" />
+          </CarouselImage>
+          <CarouselImage>
+            <img src="/assets/19.jpg" />
+            <img src="/assets/20.jpeg" />
+            <img src="/assets/21.jpeg" />
+          </CarouselImage>
         </Carousel>
       </SquareGalery>
 
-      <WhyMe>
-        <h2>Porque Escolher o Luis Piercer Tatto?</h2>
-        <p>
-          Vocês querem aplicações de joias a Domicílio com altíssima qualidade e
-          horário pontual?
-          <br /> (Já aviso que eu chego até antes!)
-          <br /> Então acharam o Body Piercer certo! <br />
-          Eu sou especializado em aplicações de joias na Orelha e no Nariz.
-        </p>
-      </WhyMe>
+      <WhyMeContainer>
+        <BigNumbers>
+          <div>
+            <BoxBigNumbers>
+              <MdFace size="70px" />
+              <div>
+                <h2>Clientes</h2>
+                <p>120</p>
+              </div>
+            </BoxBigNumbers>
+            <BoxBigNumbers>
+              <GiLoveInjection size="70px" />
+              <div>
+                <h2>Total de Piercings Aplicados</h2>
+                <p>143</p>
+              </div>
+            </BoxBigNumbers>
+          </div>
+          <div>
+            <BoxBigNumbers>
+              <MdHome size="70px" />
+              <div>
+                <h2>Piercings Aplicado a domicilio</h2>
+                <p>95</p>
+              </div>
+            </BoxBigNumbers>
+            <BoxBigNumbers>
+              <MdAvTimer size="70px" />
+              <div>
+                <h2>Horas de Estudo</h2>
+                <p>130</p>
+              </div>
+            </BoxBigNumbers>
+          </div>
+        </BigNumbers>
+        <WhyMe>
+          <h2>Porque Escolher o Luis Piercer Tatto?</h2>
+          <p>
+            Vocês querem aplicações de joias a Domicílio com altíssima qualidade e
+            horário pontual?
+            <br /> (Já aviso que eu chego até antes!)
+            <br /> Então acharam o Body Piercer certo! <br />
+            Eu sou especializado em aplicações de joias na Orelha e no Nariz.
+          </p>
+        </WhyMe>
+      </WhyMeContainer>
     </Container>
   )
 }
