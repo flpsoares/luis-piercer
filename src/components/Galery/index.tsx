@@ -4,8 +4,7 @@ import {
   WhyMeContainer,
   WhyMe,
   BigNumbers,
-  BoxBigNumbers,
-  CarouselImage
+  BoxBigNumbers
 } from './style'
 
 import { MdFace, MdHome, MdAvTimer } from 'react-icons/md'
@@ -15,45 +14,36 @@ import { GiLoveInjection } from 'react-icons/gi'
 import Carousel from 'react-elastic-carousel'
 
 const Galery: React.FC = () => {
+  const breakPoints = [
+    { width: 768, itemsToShow: 1 },
+    { width: 1024, itemsToShow: 2 },
+    { width: 1366, itemsToShow: 3 }
+  ]
   return (
     <Container>
       <SquareGalery id="galery">
-        <Carousel isRTL={false}>
-          <CarouselImage>
-            <img src="/assets/p1.jpg" />
-            <img src="/assets/p2.jpg" />
-            <img src="/assets/p3.jpg" />
-          </CarouselImage>
-          <CarouselImage>
-            <img src="/assets/p4.jpg" />
-            <img src="/assets/p5.jpg" />
-            <img src="/assets/p6.jpg" />
-          </CarouselImage>
-          <CarouselImage>
-            <img src="/assets/p7.jpg" />
-            <img src="/assets/p8.jpg" />
-            <img src="/assets/p9.jpg" />
-          </CarouselImage>
-          <CarouselImage>
-            <img src="/assets/p10.jpg" />
-            <img src="/assets/p11.jpg" />
-            <img src="/assets/p12.jpg" />
-          </CarouselImage>
-          <CarouselImage>
-            <img src="/assets/p13.jpg" />
-            <img src="/assets/p14.jpg" />
-            <img src="/assets/p15.jpg" />
-          </CarouselImage>
-          <CarouselImage>
-            <img src="/assets/p16.jpg" />
-            <img src="/assets/p17.jpg" />
-            <img src="/assets/p18.jpg" />
-          </CarouselImage>
-          <CarouselImage>
-            <img src="/assets/p19.jpg" />
-            <img src="/assets/p20.jpeg" />
-            <img src="/assets/p21.jpeg" />
-          </CarouselImage>
+        <Carousel isRTL={false} breakPoints={breakPoints}>
+          <img src="/assets/p1.jpg" />
+          <img src="/assets/p2.jpg" />
+          <img src="/assets/p3.jpg" />
+          <img src="/assets/p4.jpg" />
+          <img src="/assets/p5.jpg" />
+          <img src="/assets/p6.jpg" />
+          <img src="/assets/p7.jpg" />
+          <img src="/assets/p8.jpg" />
+          <img src="/assets/p9.jpg" />
+          <img src="/assets/p10.jpg" />
+          <img src="/assets/p11.jpg" />
+          <img src="/assets/p12.jpg" />
+          <img src="/assets/p13.jpg" />
+          <img src="/assets/p14.jpg" />
+          <img src="/assets/p15.jpg" />
+          <img src="/assets/p16.jpg" />
+          <img src="/assets/p17.jpg" />
+          <img src="/assets/p18.jpg" />
+          <img src="/assets/p19.jpg" />
+          <img src="/assets/p20.jpeg" />
+          <img src="/assets/p21.jpeg" />
         </Carousel>
       </SquareGalery>
 

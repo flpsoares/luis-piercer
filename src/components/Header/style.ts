@@ -14,6 +14,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 export const NavButton = styled.a`
@@ -28,5 +32,9 @@ export const NavButton = styled.a`
   &:hover {
     padding-bottom: 51px;
     border-bottom: 2px solid var(--primary);
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `

@@ -28,7 +28,6 @@ export const Line = styled.div`
 
 export const BoxProfile = styled.div`
   width: 100%;
-  /* border: 1px solid black; */
   display: flex;
 `
 
