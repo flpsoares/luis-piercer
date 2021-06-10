@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
   return (
     <Container>
       {title && <PoetryModal title={title} />}
-      <Title>Quem é Luis Piercer33?</Title>
+      <Title id="aboutMe">Quem é Luis Piercer33?</Title>
       <Line />
       <BoxProfile>
         <Profile>

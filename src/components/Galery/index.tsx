@@ -5,7 +5,7 @@ import Carousel from 'react-elastic-carousel'
 const Galery: React.FC = () => {
   return (
     <Container>
-      <SquareGalery>
+      <SquareGalery id="galery">
         <Carousel isRTL={false}>
           <CarouselImage>
             <img src="/assets/p1.jpg" />
