@@ -4,6 +4,8 @@ export const Container = styled.div`
   width: 100%;
   padding: 30px;
   background-color: rgba(17, 16, 16, 1);
+
+  scroll-margin-top: 100px;
 `
 
 export const SquareGalery = styled.div`
@@ -51,7 +53,6 @@ export const BigNumbers = styled.div`
 
 export const BoxBigNumbers = styled.div`
   width: 50%;
-  /* background-color: blue; */
 
   display: flex;
   align-items: center;
@@ -75,10 +76,9 @@ export const BoxBigNumbers = styled.div`
 
 export const CarouselImage = styled.div`
   img {
-    width: 170px;
-    height: 100%;
-    border: 0px solid white;
-
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     margin: 0 40px;
   }
 `

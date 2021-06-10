@@ -50,9 +50,9 @@ const Galery: React.FC = () => {
             <img src="/assets/p18.jpg" />
           </CarouselImage>
           <CarouselImage>
-            <img src="/assets/19.jpg" />
-            <img src="/assets/20.jpeg" />
-            <img src="/assets/21.jpeg" />
+            <img src="/assets/p19.jpg" />
+            <img src="/assets/p20.jpeg" />
+            <img src="/assets/p21.jpeg" />
           </CarouselImage>
         </Carousel>
       </SquareGalery>

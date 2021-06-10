@@ -6,7 +6,7 @@ const Banner: React.FC = () => {
   return (
     <Container>
       <ImageArea>
-        <Image src="/assets/banner.jpg" layout="fill" />
+        <Image src="/assets/banner.jpg" objectFit="cover" layout="fill" />
       </ImageArea>
     </Container>
   )

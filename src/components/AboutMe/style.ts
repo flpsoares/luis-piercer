@@ -8,6 +8,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  scroll-margin-top: 100px;
 `
 
 export const Title = styled.h1`

@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       <div>
         <NavButton href="#aboutMe">SOBRE MIM</NavButton>
         <NavButton href="#galery">GALERIA</NavButton>
-        <NavButton href="#">GALERIA</NavButton>
+        {/* <NavButton href="#">ME ESCOLHA</NavButton> */}
         <NavButton href="#">DESCONTO</NavButton>
       </div>
     </Container>

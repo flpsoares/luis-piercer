@@ -22,9 +22,9 @@ const AboutMe: React.FC = () => {
   }
 
   return (
-    <Container>
+    <Container id="aboutMe">
       {title && <PoetryModal title={title} />}
-      <Title id="aboutMe">Quem é Luis Piercer33?</Title>
+      <Title>Quem é Luis Piercer33?</Title>
       <Line />
       <BoxProfile>
         <Profile>
@@ -32,6 +32,7 @@ const AboutMe: React.FC = () => {
             <Image
               alt="Luis Guilherme"
               src="/assets/luis.jpg"
+              objectFit="cover"
               width={80}
               height={80}
             />
