@@ -133,7 +133,7 @@ export const PoetryButton = styled.button`
   }
 `
 
-export const ContactButton = styled.button`
+export const ContactButton = styled.a`
   background-color: rgba(231, 141, 60, 0.3);
   color: white;
   padding: 20px;
@@ -141,6 +141,8 @@ export const ContactButton = styled.button`
   margin-top: 40px;
   border-radius: 27px;
   transition: border-radius 0.4s, background-color 0.4s, color 0.4s;
+
+  text-decoration: none;
 
   &:hover {
     background-color: rgba(231, 141, 60, 1);

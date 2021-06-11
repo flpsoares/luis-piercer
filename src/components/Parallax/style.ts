@@ -4,12 +4,14 @@ export const Container = styled.div`
   width: 100vw;
   padding: 60px 50px;
 `
-export const Overlay = styled.button`
+export const Overlay = styled.a`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   height: 300px;
   color: white;
+
+  text-decoration: none;
 
   display: flex;
   align-items: center;

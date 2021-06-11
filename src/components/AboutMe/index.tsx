@@ -75,7 +75,10 @@ const AboutMe: React.FC = () => {
         </Poetry>
       </BoxProfile>
 
-      <ContactButton>
+      <ContactButton
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=5511961943537&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20fazer%20um%20piercing."
+      >
         Entre em contato agora para agendar o seu piercing comigo!
       </ContactButton>
     </Container>
