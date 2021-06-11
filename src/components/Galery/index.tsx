@@ -87,10 +87,10 @@ const Galery: React.FC = () => {
           <p>
             Vocês querem aplicações de joias a Domicílio com altíssima qualidade e
             horário pontual?
-            <br /> (Já aviso que eu chego até antes!)
-            <br /> Então acharam o Body Piercer certo! <br />
-            Eu sou especializado em aplicações de joias na Orelha e no Nariz.
           </p>
+          <p>(Já aviso que eu chego até antes!)</p>
+          <p>Então acharam o Body Piercer certo!</p>
+          <p>Eu sou especializado em aplicações de joias na Orelha e no Nariz.</p>
         </WhyMe>
       </WhyMeContainer>
     </Container>

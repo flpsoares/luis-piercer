@@ -1,7 +1,5 @@
 import { Container, NavButton } from './style'
 
-import Image from 'next/image'
-
 const Header: React.FC = () => {
   return (
     <Container>
@@ -11,7 +9,7 @@ const Header: React.FC = () => {
       <div>
         <NavButton href="#aboutMe">SOBRE MIM</NavButton>
         <NavButton href="#galery">GALERIA</NavButton>
-        <NavButton href="#">DESCONTO</NavButton>
+        <NavButton href="#coupon">CUPOM</NavButton>
       </div>
     </Container>
   )
