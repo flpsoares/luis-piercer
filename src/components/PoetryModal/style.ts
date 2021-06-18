@@ -25,7 +25,7 @@ export const Container = styled.div`
 export const Box = styled(motion.div)`
   position: relative;
 
-  width: 500px;
+  width: 470px;
   height: 70vh;
 `
 export const Title = styled.h1`
